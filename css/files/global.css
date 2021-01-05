@@ -1,5 +1,36 @@
-* {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --color-main: #91cc14;
+  --color-main-dark: #79b200;
+  --color-main-light: #abe52e;
+  --color-font: #333333;
+  --color-font-white: #ffffff;
+  --gradient: linear-gradient(90deg, #000000 0%, #434343 100%);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--color-font);
+}
+
+img {
+  display: block;
+}
+
+.window {
+  max-width: 1024px;
+  margin: 0 auto;
 }
