@@ -8,9 +8,20 @@ export default function timer(Targetdate) {
   const seconds = document.querySelector('.seconds');
 
   setInterval(() => {
-    days.innerText = `${date.total.days}:`;
-    hours.innerText = `${date.total.hours}:`;
-    minutes.innerText = `${date.total.minutes}:`;
-    seconds.innerText = date.total.seconds;
+    days.innerText = `${date.total.days} : `;
+    hours.innerText =
+      date.total.hours < 10
+        ? `0${date.total.hours} : `
+        : `${date.total.hours} : `;
+
+    minutes.innerText =
+      date.total.minutes < 10
+        ? `0${date.total.minutes} : `
+        : `${date.total.minutes} : `;
+
+    seconds.innerText =
+      date.total.seconds < 10
+        ? `0${date.total.seconds}`
+        : `${date.total.seconds}`;
   }, 1000);
 }
