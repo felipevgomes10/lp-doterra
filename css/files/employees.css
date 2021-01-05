@@ -1,0 +1,81 @@
+.employees {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 6.9rem 3.2rem;
+}
+
+.employees-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 6.2rem;
+  text-align: center;
+}
+
+.employees-title h1 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+  margin-bottom: 1.6rem;
+}
+
+.employees-title p {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.employees-testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 6.4rem;
+}
+
+.employees-testimonial img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.employees-testimonial p {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  margin-top: 1.6rem;
+}
+
+.employees-quote {
+  position: relative;
+  margin-top: 4rem;
+}
+
+.employees-quote img {
+  width: 5.2rem;
+  height: 5.2rem;
+  position: absolute;
+}
+
+.employees-quote img:first-child {
+  top: -36px;
+  left: -5px;
+}
+
+.employees-quote img:last-child {
+  transform: rotate(180deg);
+  bottom: -36px;
+  right: -5px;
+}
+
+.employees-quote p {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  max-width: 477px;
+  max-height: 80px;
+  text-align: center;
+}
