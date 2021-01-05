@@ -25,6 +25,7 @@ header {
   align-items: center;
   flex-direction: column;
   color: var(--color-font-white);
+  text-align: center;
 }
 
 .header-title h1 {
