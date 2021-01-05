@@ -1,0 +1,27 @@
+.videos {
+  background: var(--gradient);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 6.9rem 3.2rem;
+}
+
+.videos .header-title {
+  color: var(--color-font-white);
+  margin-bottom: 3.2rem;
+}
+
+.videos-wrapper {
+  width: 1024px;
+  display: grid;
+  grid-template-columns: repeat(2, 48rem);
+  justify-content: center;
+  align-content: center;
+  gap: 32px;
+}
+
+.videos-wrapper iframe {
+  min-height: 315px;
+  width: 100%;
+}
