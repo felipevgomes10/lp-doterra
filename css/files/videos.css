@@ -13,7 +13,7 @@
 }
 
 .videos-wrapper {
-  width: 1024px;
+  max-width: 1024px;
   display: grid;
   grid-template-columns: repeat(2, 48rem);
   justify-content: center;
@@ -24,4 +24,34 @@
 .videos-wrapper iframe {
   min-height: 315px;
   width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .videos-wrapper {
+    grid-template-columns: repeat(2, 28rem);
+  }
+
+  .videos-wrapper iframe {
+    min-height: 215px;
+  }
+}
+
+@media (max-width: 660px) {
+  .videos-wrapper {
+    grid-template-columns: repeat(1, 48rem);
+  }
+
+  .videos-wrapper iframe {
+    min-height: 315px;
+  }
+}
+
+@media (max-width: 550px) {
+  .videos-wrapper {
+    grid-template-columns: repeat(1, 28rem);
+  }
+
+  .videos-wrapper iframe {
+    min-height: 215px;
+  }
 }

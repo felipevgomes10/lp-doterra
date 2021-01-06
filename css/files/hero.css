@@ -1,7 +1,7 @@
 header {
   background: var(--gradient);
   min-height: 551.22px;
-  padding: 3.2rem 3.2rem 6.9rem;
+  padding: 3.2rem 0 6.9rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -12,6 +12,7 @@ header {
   background: var(--color-main);
   align-self: flex-start;
   border-radius: 2px;
+  margin-left: 3.2rem;
 }
 
 .logo-img {
@@ -26,6 +27,7 @@ header {
   flex-direction: column;
   color: var(--color-font-white);
   text-align: center;
+  margin: 0 3.2rem;
 }
 
 .header-title h1 {
@@ -33,6 +35,19 @@ header {
   font-size: 3.2rem;
   line-height: 3.7rem;
   margin: 3.2rem 0.8rem 0.8rem;
+}
+
+header .header-title h1 {
+  animation: blink 0.5s linear infinite forwards;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .header-title p {
@@ -50,15 +65,37 @@ header {
   background: var(--color-main);
 }
 
+.banner-blur {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 2.4rem 0 3.2rem;
+}
+
 .banner-slider-container {
   position: relative;
-  margin: 3.2rem 0.8rem;
 }
 
 .banner-slider {
   height: 500px;
   width: 500px;
   overflow: hidden;
+}
+
+@media (max-width: 780px) {
+  .banner-slider {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 410px) {
+  .banner-slider {
+    height: 150px;
+    width: 150px;
+  }
 }
 
 .banner-wrapper {
@@ -68,6 +105,18 @@ header {
 
 .banner-wrapper img {
   height: 500px;
+}
+
+@media (max-width: 780px) {
+  .banner-wrapper img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 410px) {
+  .banner-wrapper img {
+    height: 150px;
+  }
 }
 
 .arrow-left,
@@ -97,6 +146,12 @@ header {
   color: var(--color-font-white);
   font-weight: 700;
   font-size: 6.4rem;
+}
+
+@media (max-width: 560px) {
+  .timer span {
+    font-size: 3.2rem;
+  }
 }
 
 .cta {

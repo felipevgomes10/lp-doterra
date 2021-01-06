@@ -1,11 +1,42 @@
 .customers {
   display: flex;
   max-height: 589px;
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
+@media (max-width: 870px) {
+  .customers {
+    flex-direction: column;
+    max-height: initial;
+  }
 }
 
 .customers-left,
 .customers-right {
   padding: 6.9rem;
+}
+
+@media (max-width: 870px) {
+  .customers-left,
+  .customers-right {
+    padding-bottom: 0;
+  }
+
+  .customers-right {
+    padding-top: 3.2rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .customers-left,
+  .customers-right {
+    padding: 6.9rem 1.6rem 0;
+  }
+
+  .customers-right {
+    padding-top: 3.2rem;
+  }
 }
 
 .customers-left {
@@ -29,6 +60,25 @@
   right: 0;
 }
 
+@media (max-width: 870px) {
+  .customers-left {
+    flex-basis: initial;
+    min-height: initial;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .customers-left .cta {
+    display: none;
+  }
+
+  .customers-left::after {
+    bottom: 0;
+    left: 50%;
+    transform: rotate(90deg);
+  }
+}
+
 .customers-left h1 {
   font-weight: 700;
   font-size: 3.2rem;
@@ -40,6 +90,13 @@
   font-size: 1.6rem;
   line-height: 1.9rem;
   margin: 16px 0 32px;
+}
+
+@media (max-width: 870px) {
+  .customers-left h1,
+  .customers-left p {
+    text-align: center;
+  }
 }
 
 .customers-right {
@@ -77,6 +134,12 @@
   border: 1px solid transparent;
 }
 
+@media (max-width: 500px) {
+  .customers-testimonials {
+    flex-direction: column;
+  }
+}
+
 .customers-testimonials:hover {
   border: 1px solid var(--color-main);
   transform: translateY(-3px);
@@ -110,8 +173,35 @@
   color: #c4c4c4;
 }
 
+@media (max-width: 500px) {
+  .customers-testimonials .text p,
+  .customers-testimonials .text span {
+    display: block;
+    text-align: center;
+  }
+}
+
 .customers-testimonials img:last-child {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+}
+
+@media (max-width: 620px) {
+  .customers-testimonials img:last-child {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.cta-mobile {
+  display: none;
+  align-self: center;
+  margin-bottom: 6.9rem;
+}
+
+@media (max-width: 870px) {
+  .cta-mobile {
+    display: initial;
+  }
 }

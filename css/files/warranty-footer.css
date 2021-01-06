@@ -1,0 +1,71 @@
+.warranty-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 6.9rem 3.2rem;
+}
+
+.warranty-footer .warranty {
+  margin: 0;
+}
+
+.warranty-footer .warranty p:first-child {
+  color: var(--color-font);
+}
+
+.warranty-footer .warranty p:last-of-type {
+  position: relative;
+}
+
+.price-icon {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+
+@media (max-width: 440px) {
+  .price-icon {
+    display: none;
+  }
+}
+
+.medias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3.2rem;
+  background: var(--color-main);
+  width: 30.2rem;
+  padding: 1.6rem;
+  border-radius: 2px;
+  color: var(--color-font-white);
+}
+
+.medias p {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.medias span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.medias span:first-of-type img {
+  margin-right: 4.986px;
+}
+
+.medias span:last-child img {
+  margin-right: 4px;
+}
+
+.medias span:not(:last-child) {
+  margin-bottom: 0.8rem;
+}

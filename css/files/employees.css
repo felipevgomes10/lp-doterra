@@ -69,6 +69,7 @@
   transform: rotate(180deg);
   bottom: -36px;
   right: -5px;
+  z-index: -1;
 }
 
 .employees-quote p {
@@ -76,6 +77,11 @@
   font-size: 1.4rem;
   line-height: 2rem;
   max-width: 477px;
-  max-height: 80px;
   text-align: center;
+}
+
+@media (max-width: 520px) {
+  .employees-quote p {
+    font-size: 1.2rem;
+  }
 }
